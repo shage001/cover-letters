@@ -53,4 +53,4 @@ mv $name.docx ~/Dropbox/Jobs/
 /Applications/LibreOffice.app/Contents/MacOS/soffice --headless --convert-to pdf --outdir ~/Dropbox/Jobs/ ~/Dropbox/Jobs/$name.docx
 
 # rename the pdf file
-mv ~/Dropbox/Jobs/$name.pdf ~/Dropbox/Jobs/Samuel-Hage-Cover-Letter.pdf
+mv ~/Dropbox/Jobs/$name.pdf ~/Dropbox/Jobs/Sam-Hage-Cover-Letter.pdf
