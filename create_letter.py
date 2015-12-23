@@ -42,6 +42,7 @@ def create_document( company_name, pymetrics ):
 	## read company name and position ##
 	# company_name_list = raw_input( 'Company name: ' ).lower().split()
 	position = raw_input( 'Position: ' ).lower()
+	changing_the_way = raw_input( '...changing the way ' )
 
 	## construct the file name ##
 	# file_name = 'cover-letter-' + '-'.join( company_name_list ) + '.docx'
@@ -65,6 +66,7 @@ def create_document( company_name, pymetrics ):
 
 		p.style = obj_charstyle # set paragraph style
 		p.text = p.text.replace( '$$$$$', company_name )
+		p.text = p.text.replace( '#####', changing_the_way )
 		p.text = p.text.replace( '@@@@@', position )
 
 		if i == 4 and not pymetrics: # remove the sentence about pymetrics
