@@ -41,14 +41,14 @@ def create_document( company_name, pymetrics ):
 	"""
 	## read company name and position ##
 	# company_name_list = raw_input( 'Company name: ' ).lower().split()
-	position = raw_input( 'Position: ' ).lower()
-	changing_the_way = raw_input( '...changing the way ' )
+	position = raw_input( 'Position: ' )
+	changing_the_way = raw_input( '...changing the ' )
 
 	## construct the file name ##
 	# file_name = 'cover-letter-' + '-'.join( company_name_list ) + '.docx'
 	file_name = 'cover-letter-' + company_name + '.docx'
 	company_name_list = company_name.split( '-' )
-	company_name = ' '.join( company_name_list ).title()
+	company_name = ' '.join( company_name_list )
 
 	## copy the template ##
 	shutil.copy( TEMPLATE, file_name )
